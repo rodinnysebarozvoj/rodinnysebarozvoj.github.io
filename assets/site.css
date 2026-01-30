@@ -1,0 +1,95 @@
+/* Design tokens: brand colors, typography, spacing, and layout */
+:root {
+  --brand-primary: #b04b9a;
+  --bg-pink-light: #f9e6f2;
+  --bg-gray-light: #f4f4f6;
+  --text-main: #2b2b2b;
+  --text-muted: #6b6b6b;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --content-max: 1100px;
+  --font-sans: "Poppins", "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+/* Base element styles: typography defaults */
+body {
+  font-family: var(--font-sans);
+  color: var(--text-main);
+}
+
+/* Base heading styles: consistent weight */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+/* Base paragraph style: comfortable reading rhythm */
+p {
+  line-height: 1.6;
+}
+
+/* Layout utilities: sections and wrappers */
+.section {
+  padding: 48px 0;
+}
+
+.section--pink {
+  background: var(--bg-pink-light);
+}
+
+.section--gray {
+  background: var(--bg-gray-light);
+}
+
+.section--white {
+  background: #ffffff;
+}
+
+.wrap {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Card utilities: simple containers */
+.card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+}
+
+.card-lg {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: 32px;
+}
+
+/* Text utilities: brand and alignment helpers */
+.text-brand {
+  color: var(--brand-primary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Button utility: brand call-to-action */
+.btn-brand {
+  display: inline-block;
+  background: var(--brand-primary);
+  color: #ffffff;
+  border-radius: var(--radius-sm);
+  padding: 10px 18px;
+  text-decoration: none;
+}
