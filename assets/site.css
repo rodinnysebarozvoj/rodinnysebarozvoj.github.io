@@ -1,6 +1,6 @@
 /* Design tokens: brand colors, typography, spacing, and layout */
 :root {
-  --brand-primary: #b04b9a;
+  --brand-primary: #c12cc3;
   --bg-pink-light: #f9e6f2;
   --bg-gray-light: #f4f4f6;
   --text-main: #2b2b2b;
@@ -26,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* Base paragraph style: comfortable reading rhythm */
@@ -91,5 +91,83 @@ p {
   color: #ffffff;
   border-radius: var(--radius-sm);
   padding: 10px 18px;
+  text-decoration: none;
+}
+
+/* Page-specific fixes: header nav link color */
+nav.text-center.mt-3 a {
+  color: #000000;
+  text-decoration: none;
+}
+
+nav.text-center.mt-3 a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Page-specific fixes: footer text colors */
+#siteFooter {
+  color: #fff;
+}
+
+#siteFooter p {
+  color: inherit;
+}
+
+#siteFooter p.fs-lg-14.fs-sm-14 {
+  color: rgb(255, 172, 172);
+  font-weight: 700;
+}
+
+#siteFooter a,
+#siteFooter a:link,
+#siteFooter a:visited {
+  color: rgb(245, 74, 77);
+  text-decoration: none;
+}
+
+#siteFooter a:hover {
+  color: rgb(220, 60, 60);
+  text-decoration: none;
+}
+
+/* Utilities: brand accent helpers */
+.text-brand {
+  color: var(--brand-primary);
+}
+
+.fw-brand {
+  font-weight: 600;
+}
+
+#webinare h4 {
+  color: var(--brand-primary);
+  font-weight: 600;
+}
+
+#webinare a.text-decoration-none {
+  color: var(--brand-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#webinare a.text-decoration-none:hover {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+#online-kurzy h4 {
+  color: var(--brand-primary);
+  font-weight: 600;
+}
+
+#online-kurzy a.text-decoration-none {
+  color: var(--brand-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#online-kurzy a.text-decoration-none:hover {
+  color: var(--brand-primary);
   text-decoration: none;
 }
