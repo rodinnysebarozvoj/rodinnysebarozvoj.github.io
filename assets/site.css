@@ -177,6 +177,29 @@ p {
   text-decoration: none;
 }
 
+/* Page shell for layouts that wrap the header */
+.page-shell {
+  padding-top: 5px;
+}
+
+.row-white {
+  background: #ffffff;
+}
+
+/* Page-level backgrounds */
+body.page--home {
+  background-image: url("/uploads/page/files/zrucnosti-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Future variant: alternative footer color */
+.site-footer--blue {
+  background-color: var(--color-accent-blue, #2d76c5);
+}
+
 /* Utilities: brand accent helpers */
 .text-brand {
   color: var(--brand-primary);
