@@ -253,6 +253,15 @@ body.page--home {
   border: none;
   padding: 10px 24px;
   border-radius: 25px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-rounded-brand:hover,
+.btn-rounded-brand:focus {
+  background-color: #a024a4;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 #webinare h4 {
