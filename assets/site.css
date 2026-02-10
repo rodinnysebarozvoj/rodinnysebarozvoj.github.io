@@ -1,7 +1,7 @@
 /* Design tokens: brand colors, typography, spacing, and layout */
 :root {
   --brand-primary: #c12cc3;
-  --bg-pink-light: #f9e6f2;
+  --bg-pink-light: #ffeaf3;
   --bg-gray-light: #f4f4f6;
   --text-main: #2b2b2b;
   --text-muted: #6b6b6b;
@@ -68,6 +68,14 @@ p {
   background: #ffffff;
 }
 
+.stack-sm > * + * {
+  margin-top: 8px;
+}
+
+.stack-md > * + * {
+  margin-top: 16px;
+}
+
 .wrap {
   max-width: var(--content-max);
   margin: 0 auto;
@@ -80,6 +88,11 @@ p {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   padding: 24px;
+}
+
+.card--soft {
+  background: #f5f5f5;
+  box-shadow: none;
 }
 
 .card-lg {
@@ -215,6 +228,31 @@ body.page--home {
 
 .sprevadzanie-cennik {
   margin-top: 30px;
+}
+
+.lead-text {
+  max-width: 760px;
+  margin: 20px auto;
+}
+
+.section-inner-md {
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+.content-narrow {
+  max-width: 720px;
+}
+
+.input-narrow {
+  max-width: 380px;
+}
+
+.btn-rounded-brand {
+  background-color: var(--brand-primary);
+  border: none;
+  padding: 10px 24px;
+  border-radius: 25px;
 }
 
 #webinare h4 {
