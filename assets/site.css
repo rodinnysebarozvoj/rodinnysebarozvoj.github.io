@@ -65,7 +65,7 @@ p {
 }
 
 .section--white {
-  background: #ffffff;
+  background: #fff;
 }
 
 .stack-sm > * + * {
@@ -251,6 +251,7 @@ body.page--home {
 .btn-rounded-brand {
   background-color: var(--brand-primary);
   border: none;
+  border-color: transparent;
   padding: 10px 24px;
   border-radius: 25px;
   color: #ffffff;
@@ -262,6 +263,10 @@ body.page--home {
   background-color: #a024a4;
   color: #ffffff;
   text-decoration: none;
+}
+
+.btn-rounded-brand:focus {
+  box-shadow: none;
 }
 
 #webinare h4 {
