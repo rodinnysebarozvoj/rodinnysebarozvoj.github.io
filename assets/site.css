@@ -169,6 +169,19 @@ p {
   color: #fff;
 }
 
+.site-footer::before {
+  pointer-events: none;
+  z-index: 0;
+}
+
+.site-footer .container,
+.site-footer .row,
+.site-footer a,
+.site-footer p {
+  position: relative;
+  z-index: 1;
+}
+
 .site-footer p {
   color: inherit;
   text-align: center;
@@ -183,12 +196,12 @@ p {
 #siteFooter a,
 #siteFooter a:link,
 #siteFooter a:visited {
-  color: rgb(245, 74, 77);
+  color: #ffd6f3;
   text-decoration: none;
 }
 
 #siteFooter a:hover {
-  color: rgb(220, 60, 60);
+  color: #ffffff;
   text-decoration: none;
 }
 
